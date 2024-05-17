@@ -13,7 +13,7 @@
             line-height: 1.6;
         }
         header {
-            background-color: rgba(0, 0, 0, 0.8);
+            background-color: #000;
             padding: 10px 20px;
             position: fixed;
             width: 100%;
@@ -22,6 +22,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
         header h1 {
             margin: 0;
@@ -45,7 +46,7 @@
         }
         .hero {
             text-align: center;
-            background-image: url('https://imgur.com/a/Rt69UG5'); /* Substitua esta URL pelo link direto da sua imagem abstrata */
+            background-image: url('https://imgur.com/PmgjS28'); /* Substitua esta URL pelo link direto da sua imagem abstrata */
             background-size: cover;
             background-position: center;
             color: #fff;
@@ -102,13 +103,49 @@
             margin: 10px 0;
         }
         footer {
-            background-color: rgba(0, 0, 0, 0.8);
+            background-color: #000;
             text-align: center;
             padding: 20px;
             color: #fff;
             position: fixed;
             width: 100%;
             bottom: 0;
+        }
+        .section-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .section-item {
+            background-color: #fff;
+            margin: 10px;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            flex: 1 1 calc(33% - 40px);
+            box-sizing: border-box;
+        }
+        .section-item img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+        .section-item h3 {
+            font-size: 1.5em;
+            margin-top: 10px;
+        }
+        .section-item p {
+            font-size: 1em;
+            color: #666;
+        }
+        .section-item a {
+            display: inline-block;
+            margin-top: 10px;
+            color: #ffd700;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .section-item a:hover {
+            color: #ffc107;
         }
     </style>
 </head>
@@ -117,40 +154,137 @@
         <h1>Tech Solutions</h1>
         <nav>
             <a href="#sobre">Sobre Mim</a>
-            <a href="#servicos">Produtos</a>
+            <a href="#servicos">Serviços</a>
             <a href="#prompts">Prompts</a>
             <a href="#planos">Planos</a>
             <a href="#fale-conosco">Fale Conosco</a>
-            <a href="#curso-monday">Curso de Monday</a>
+            <a href="#curso-monday">Curso de Monday.com</a>
         </nav>
     </header>
 
     <section class="hero">
-        <h1>Bem-vindo</h1>
-        <p>Ao Melhor Hub de Soluções Inteligentes para Você e seu Negócio</p>
-        <p>Conheça as soluções em tecnologia e automação.</p>
-        <a href="#Produtos" class="cta-button">Saiba Mais</a>
+        <h1>Bem-vindo ao Melhor Hub de Soluções Inteligentes para Você e seu Negócio</h1>
+        <p>Explore minhas soluções em tecnologia e automação.</p>
+        <a href="#servicos" class="cta-button">Saiba Mais</a>
     </section>
 
     <section id="sobre">
         <div class="container">
             <h2>Sobre Mim</h2>
-            <p>Meu nome é Felipe, tenho 24 anos e sou de Porto Alegre, Rio Grande do Sul. Atualmente trabalho em uma startup na área de tecnologia e operação, onde desenvolvo fluxos de trabalho, integrações, e automações. Tenho paixão por resolver problemas e gosto de me dedicar a projetos que envolvam sistemas, inteligência artificial e programação.</p>
+            <div class="section-content">
+                <div class="section-item">
+                    <img src="https://imgur.com/YOUR-IMAGE.jpg" alt="Sobre Mim">
+                    <h3>Felipe</h3>
+                    <p>Meu nome é Felipe, tenho 24 anos e sou de Porto Alegre, Rio Grande do Sul. Atualmente trabalho em uma startup na área de tecnologia e operação, onde desenvolvo fluxos de trabalho, integrações, e automações. Tenho paixão por resolver problemas e gosto de me dedicar a projetos que envolvam sistemas, inteligência artificial e programação.</p>
+                </div>
+            </div>
         </div>
     </section>
 
     <section id="servicos">
         <div class="container">
-            <h2>Produtos</h2>
-            <p>Ofereço serviços nas seguintes áreas:</p>
-            <ul>
-                <li>Desenvolvimento de fluxos de trabalho, configuração de workOS personalizados e automatizados</li>
-                <li>Integrações de sistemas utilizando</li>
-                <li>Criação e configuração de CRMs</li>
-                <li>Desenvolvimento de prompts para IA e chatbots</li>
-                <li>Consultoria em tecnologia e operações</li>
-                <li>E-book's com prompts incríveis</li>
-            </ul>
+            <h2>Serviços</h2>
+            <div class="section-content">
+                <div class="section-item">
+                    <img src="https://imgur.com/SbQJtpm" alt="Serviços">
+                    <h3>Desenvolvimento de Fluxos de Trabalho</h3>
+                    <p>Configuração de workOS personalizados e automatizados para otimizar processos.</p>
+                </div>
+                <div class="section-item">
+                    <img src="https://imgur.com/YOUR-IMAGE.jpg" alt="Serviços">
+                    <h3>Integrações de Sistemas</h3>
+                    <p>Utilizando Make (Integromat) para conectar diferentes sistemas e aumentar a eficiência.</p>
+                </div>
+                <div class="section-item">
+                    <img src="https://imgur.com/h1SGNh7" alt="Serviços">
+                    <h3>Criação e Configuração de CRMs</h3>
+                    <p>Implementação de soluções de CRM personalizadas para melhorar o relacionamento com clientes.</p>
+                </div>
+                <div class="section-item">
+                    <img src="https://imgur.com/YOUR-IMAGE.jpg" alt="Serviços">
+                    <h3>Desenvolvimento de Prompts para IA</h3>
+                    <p>Criação de prompts inteligentes para chatbots e assistentes virtuais.</p>
+                </div>
+                <div class="section-item">
+                    <img src="https://imgur.com/YOUR-IMAGE.jpg" alt="Serviços">
+                    <h3>Consultoria em Tecnologia e Operações</h3>
+                    <p>Consultoria especializada para otimizar a tecnologia e operações da sua empresa.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="prompts">
+        <div class="container">
+            <h2>Prompts</h2>
+            <div class="section-content">
+                <div class="section-item">
+                    <img src="https://imgur.com/YOUR-IMAGE.jpg" alt="Prompts">
+                    <h3>Prompt 1</h3>
+                    <p>Descrição do Prompt 1.</p>
+                    <a href="#">Saiba Mais</a>
+                </div>
+                <div class="section-item">
+                    <img src="https://imgur.com/YOUR-IMAGE.jpg" alt="Prompts">
+                    <h3>Prompt 2</h3>
+                    <p>Descrição do Prompt 2.</p>
+                    <a href="#">Saiba Mais</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="planos">
+        <div class="container">
+            <h2>Planos</h2>
+            <div class="section-content">
+                <div class="section-item">
+                    <img src="https://imgur.com/YOUR-IMAGE.jpg" alt="Planos">
+                    <h3>Plano 1</h3>
+                    <p>Descrição do Plano 1.</p>
+                    <a href="#">Saiba Mais</a>
+                </div>
+                <div class="section-item">
+                    <img src="https://imgur.com/YOUR-IMAGE.jpg" alt="Planos">
+                    <h3>Plano 2</h3>
+                    <p>Descrição do Plano 2.</p>
+                    <a href="#">Saiba Mais</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="fale-conosco">
+        <div class="container">
+            <h2>Fale Conosco</h2>
+            <div class="section-content">
+                <div class="section-item">
+                    <img src="https://imgur.com/YOUR-IMAGE.jpg" alt="Fale Conosco">
+                    <h3>Entre em Contato</h3>
+                    <p>Preencha o formulário para entrar em contato conosco.</p>
+                    <a href="#">Saiba Mais</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="curso-monday">
+        <div class="container">
+            <h2>Curso de Monday.com</h2>
+            <div class="section-content">
+                <div class="section-item">
+                    <img src="https://imgur.com/YOUR-IMAGE.jpg" alt="Curso de Monday.com">
+                    <h3>Curso Básico</h3>
+                    <p>Aprenda os fundamentos do Monday.com.</p>
+                    <a href="#">Saiba Mais</a>
+                </div>
+                <div class="section-item">
+                    <img src="https://imgur.com/YOUR-IMAGE.jpg" alt="Curso de Monday.com">
+                    <h3>Curso Avançado</h3>
+                    <p>Aprofunde seus conhecimentos no Monday.com.</p>
+                    <a href="#">Saiba Mais</a>
+                </div>
+            </div>
         </div>
     </section>
 
